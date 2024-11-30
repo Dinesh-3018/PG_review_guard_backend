@@ -8,6 +8,7 @@ database_url = os.getenv("MONGO_URL")
 client = MongoClient(
     database_url
 )
+vv="print"
 api_key=os.getenv("FUN_TEXT")
 google_url=os.getenv("BASR_URL")
 

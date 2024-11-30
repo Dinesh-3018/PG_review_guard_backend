@@ -1,4 +1,4 @@
-#!/home/dineshg/Pictures/funDo/Scrapper/venv/bin/python
+#!/home/buddy_dev/Pictures/Scrapper/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

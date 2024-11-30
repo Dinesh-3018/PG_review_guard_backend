@@ -5,9 +5,17 @@ from passlib.context import CryptContext
 from pydantic import BaseModel, EmailStr
 from typing import Optional, List
 import os
+from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],  
+)
 load_dotenv()
 database_url = os.getenv("MONGO_URL")
 client = MongoClient(database_url)

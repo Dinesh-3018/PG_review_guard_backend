@@ -8,7 +8,8 @@ charset-normalizer==3.3.2
 click==8.1.7
 dnspython==2.6.1
 email_validator==2.2.0
-fastapi==0.112.2
+fastapi>=0.100.0
+pydantic>=2.0
 fastapi-cli==0.0.5
 Flask==3.0.3
 google_search_results==2.4.2
@@ -30,7 +31,6 @@ passlib==1.7.4
 playwright==1.46.0
 pluggy==1.5.0
 psycopg2==2.9.9
-pydantic==1.10.9
 pydantic_core==2.20.1
 pyee==11.1.0
 Pygments==2.18.0

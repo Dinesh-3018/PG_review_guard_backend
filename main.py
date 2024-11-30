@@ -68,31 +68,80 @@ def verify_password(plain_password: str, hashed_password: str) -> bool:
 def get_properties(page: int = Query(1, ge=1), page_size: int = Query(10, ge=1)):
     skip = (page - 1) * page_size
     cursor = property_collection.find().skip(skip).limit(page_size)
-    properties = [
-        Property(
-            id=str(prop["_id"]),
-            property_name=prop["Property_Name"],
-            city=prop["City"],
-            locality=prop["Locality"],
-            allowed_gender=prop["Allowed_Gender"],
-            property_type=prop["Property_type"],
-            pricing_plan=prop["Pricing_Plan"],
-            amenities=[Amenity(
-                name=amenity.get("name", ""),
-                imageUrl=amenity.get("imageUrl", ""),
-                description=amenity.get("description", "")
-            ) for amenity in prop.get("Amitnies", [])],
-            assets=[Asset(
-                name=asset.get("name", ""),
-                imageUrl=asset.get("imageUrl", ""),
-                description=asset.get("description", "")
-            ) for asset in prop.get("Assets", [])],
-            site_name=prop["site_name"],
-            current_price=prop["Current_Price"]
-        )
-        for prop in cursor
-    ]
+    properties = []
+    
+    for prop in cursor:
+        try:
+            property_item = Property(
+                id=str(prop["_id"]),
+                property_name=prop.get("Property_Name", ""),
+                city=prop.get("City", ""),
+                locality=prop.get("Locality", ""),
+                allowed_gender=prop.get("Allowed_Gender", ""),
+                property_type=prop.get("Property_type", ""),
+                pricing_plan=prop.get("Pricing_Plan", ""),
+                amenities=[
+                    Amenity(
+                        name=amenity.get("name", "") or "",  # Default to empty string if None
+                        imageUrl=amenity.get("imageUrl", "") or "",  # Default to empty string if None
+                        description=amenity.get("description", "")
+                    ) for amenity in prop.get("Amitnies", [])
+                ],
+                assets=[
+                    Asset(
+                        name=asset.get("name", "") or "",  # Default to empty string if None
+                        imageUrl=asset.get("imageUrl", "") or "",  # Default to empty string if None
+                        description=asset.get("description", "")
+                    ) for asset in prop.get("Assets", [])
+                ],
+                site_name=prop.get("site_name", ""),
+                current_price=prop.get("Current_Price", 0.0)  
+            )
+            properties.append(property_item)
+        except Exception as e:
+            print(f"Error processing property {prop}: {e}")
+
     return properties
+
+@app.get("/properties/{property_id}", response_model=Property)
+def get_property_details(property_id: str):
+  
+    try:
+        property_data = property_collection.find_one({"_id": ObjectId(property_id)})
+
+        if not property_data:
+            raise HTTPException(status_code=404, detail="Property not found")
+
+        property_details = Property(
+            id=str(property_data["_id"]),
+            property_name=property_data["Property_Name"],
+            city=property_data["City"],
+            locality=property_data["Locality"],
+            allowed_gender=property_data["Allowed_Gender"],
+            property_type=property_data["Property_type"],
+            pricing_plan=property_data["Pricing_Plan"],
+            amenities=[
+                Amenity(
+                    name=amenity.get("name", ""),
+                    imageUrl=amenity.get("imageUrl", ""),
+                    description=amenity.get("description", "")
+                ) for amenity in property_data.get("Amitnies", [])
+            ],
+            assets=[
+                Asset(
+                    name=asset.get("name", ""),
+                    imageUrl=asset.get("imageUrl", ""),
+                    description=asset.get("description", "")
+                ) for asset in property_data.get("Assets", [])
+            ],
+            site_name=property_data["site_name"],
+            current_price=property_data["Current_Price"]
+        )
+
+        return property_details
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
 
 @app.get("/properties/search/city", response_model=List[dict])
 async def search_properties(

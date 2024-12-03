@@ -102,7 +102,7 @@ def get_properties(page: int = Query(1, ge=1), page_size: int = Query(10, ge=1))
                 ],
                 site_name=prop.get("site_name", ""),
                 current_price=prop.get("Current_Price", 0.0) ,
-                reviews=prop.get("Reviews", []),  # Include reviews
+                reviews=prop.get("reviews", []),  # Include reviews
                 address=prop.get("Address", "") 
             )
             properties.append(property_item)
@@ -144,7 +144,7 @@ def get_property_details(property_id: str):
             ],
             site_name=property_data["site_name"],
             current_price=property_data["Current_Price"],
-            reviews=property_data.get("Reviews", []),  # Include reviews
+            reviews=property_data.get("reviews", []),  # Include reviews
             address=property_data.get("Address", "") 
         )
 
@@ -166,7 +166,7 @@ async def search_properties(
         results = list(
             property_collection.find(
                 {"City": {"$regex": city, "$options": "i"}},  
-                {"_id": 0, "Property_Name": 1, "City": 1, "Address": 1,"Locality":1,"Allowed_Gender":1,"Property_type":1,"Pricing_Plan":1,"Current_Price":1,"Amitnies":1,"Assets":1,"site_name":1,"Reviews": 1,} 
+                {"_id": 0, "Property_Name": 1, "City": 1, "Address": 1,"Locality":1,"Allowed_Gender":1,"Property_type":1,"Pricing_Plan":1,"Current_Price":1,"Amitnies":1,"Assets":1,"site_name":1,"reviews": 1,} 
             )
             .skip(skip)
             .limit(page_size)
@@ -213,7 +213,7 @@ def search_properties(
             ) for asset in prop.get("Assets", [])],
             site_name=prop["site_name"],
             current_price=prop["Current_Price"],
-            reviews=prop.get("Reviews", []),  
+            reviews=prop.get("reviews", []),  
             address=prop.get("Address", "") 
         )
         for prop in cursor

@@ -291,3 +291,6 @@ def login(user: UserLogin):
     if not db_user or not verify_password(user.password, db_user["password"]):
         raise HTTPException(status_code=401, detail="Invalid email or password")
     return {"message": "Login successful"}
+@app.get("/")
+def login():
+    return {"message": "hello world"}

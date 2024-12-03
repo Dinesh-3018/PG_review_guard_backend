@@ -35,8 +35,9 @@ class Asset(BaseModel):
     imageUrl: str
     description: Optional[str] = None
 class Review(BaseModel):
-    user: str
-    comment: str
+    displayName: str
+    text: str
+    photo_url: str
 
 class Property(BaseModel):
     id: str
@@ -102,7 +103,13 @@ def get_properties(page: int = Query(1, ge=1), page_size: int = Query(10, ge=1))
                 ],
                 site_name=prop.get("site_name", ""),
                 current_price=prop.get("Current_Price", 0.0) ,
-                reviews=prop.get("reviews", []),  # Include reviews
+                reviews=[
+                    Review(
+                        displayName=review.get("displayName", ""),
+                        text=review.get("text", ""),
+                        photo_url=review.get("photoUri", "")
+                    ) for review in prop.get("reviews", [])
+                ],              
                 address=prop.get("Address", "") 
             )
             properties.append(property_item)
@@ -144,16 +151,23 @@ def get_property_details(property_id: str):
             ],
             site_name=property_data["site_name"],
             current_price=property_data["Current_Price"],
-            reviews=property_data.get("reviews", []),  # Include reviews
+            reviews=[
+                    Review(
+                        displayName=review.get("displayName", ""),
+                        text=review.get("text", ""),
+                        photo_url=review.get("photoUri", "")
+                    ) for review in prop.get("reviews", [])
+                ],
             address=property_data.get("Address", "") 
         )
+        print(property_details)
 
         return property_details
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
 
-@app.get("/properties/search/city", response_model=List[dict])
+@app.get("/properties/search/city", response_model=List[Property])
 async def search_properties(
     city: str, 
     page: int = Query(1, gt=0), 
@@ -163,22 +177,58 @@ async def search_properties(
         skip = (page - 1) * page_size
 
         # Query the database
-        results = list(
-            property_collection.find(
-                {"City": {"$regex": city, "$options": "i"}},  
-                {"_id": 0, "Property_Name": 1, "City": 1, "Address": 1,"Locality":1,"Allowed_Gender":1,"Property_type":1,"Pricing_Plan":1,"Current_Price":1,"Amitnies":1,"Assets":1,"site_name":1,"reviews": 1,} 
-            )
-            .skip(skip)
-            .limit(page_size)
-        )
+        results = property_collection.find(
+            {"City": {"$regex": city, "$options": "i"}},  
+        ).skip(skip).limit(page_size)
 
-        if not results:
+        properties = []
+        for prop in results:
+            try:
+                property_item = Property(
+                    id=str(prop["_id"]),
+                    property_name=prop.get("Property_Name", ""),
+                    city=prop.get("City", ""),
+                    locality=prop.get("Locality", ""),
+                    allowed_gender=prop.get("Allowed_Gender", ""),
+                    property_type=prop.get("Property_type", ""),
+                    pricing_plan=prop.get("Pricing_Plan", ""),
+                    amenities=[
+                        Amenity(
+                            name=amenity.get("name", ""),
+                            imageUrl=amenity.get("imageUrl", ""),
+                            description=amenity.get("description", "")
+                        ) for amenity in prop.get("Amitnies", [])
+                    ],
+                    assets=[
+                        Asset(
+                            name=asset.get("name", ""),
+                            imageUrl=asset.get("imageUrl", ""),
+                            description=asset.get("description", "")
+                        ) for asset in prop.get("Assets", [])
+                    ],
+                    site_name=prop.get("site_name", ""),
+                    current_price=prop.get("Current_Price", 0.0),
+                    reviews=[
+                    Review(
+                        displayName=review.get("displayName", ""),
+                        text=review.get("text", ""),
+                        photo_url=review.get("photoUri", "")
+                    ) for review in prop.get("reviews", [])
+                ],    
+                    address=prop.get("Address", "")
+                )
+                properties.append(property_item)
+            except Exception as e:
+                print(f"Error processing property {prop}: {e}")
+
+        if not properties:
             raise HTTPException(status_code=404, detail="No properties found in the specified city.")
 
-        return results
+        return properties
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
+
 
 
 @app.get("/properties/search", response_model=List[Property])
@@ -213,12 +263,18 @@ def search_properties(
             ) for asset in prop.get("Assets", [])],
             site_name=prop["site_name"],
             current_price=prop["Current_Price"],
-            reviews=prop.get("reviews", []),  
+            reviews=[
+                    Review(
+                        displayName=review.get("displayName", ""),
+                        text=review.get("text", ""),
+                        photo_url=review.get("photoUri", "")
+                    ) for review in prop.get("reviews", [])
+                ],    
             address=prop.get("Address", "") 
         )
         for prop in cursor
     ]
-    
+    print(properties)
     return properties
 
 @app.post("/auth/signup")

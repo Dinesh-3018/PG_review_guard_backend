@@ -34,6 +34,10 @@ class Asset(BaseModel):
     name: str
     imageUrl: str
     description: Optional[str] = None
+class Review(BaseModel):
+    user: str
+    comment: str
+
 class Property(BaseModel):
     id: str
     property_name: str
@@ -42,10 +46,12 @@ class Property(BaseModel):
     allowed_gender: str
     property_type: str
     pricing_plan: str
-    amenities: Optional[List[Amenity]]  
-    assets: Optional[List[Asset]]       
+    amenities: Optional[List[Amenity]]
+    assets: Optional[List[Asset]]
     site_name: str
     current_price: float
+    reviews: Optional[List[Review]] = []  # Add reviews
+    address: str  # Add address field
 
     class Config:
         orm_mode = True
@@ -82,20 +88,22 @@ def get_properties(page: int = Query(1, ge=1), page_size: int = Query(10, ge=1))
                 pricing_plan=prop.get("Pricing_Plan", ""),
                 amenities=[
                     Amenity(
-                        name=amenity.get("name", "") or "",  # Default to empty string if None
-                        imageUrl=amenity.get("imageUrl", "") or "",  # Default to empty string if None
+                        name=amenity.get("name", "") or "", 
+                        imageUrl=amenity.get("imageUrl", "") or "",  
                         description=amenity.get("description", "")
                     ) for amenity in prop.get("Amitnies", [])
                 ],
                 assets=[
                     Asset(
-                        name=asset.get("name", "") or "",  # Default to empty string if None
-                        imageUrl=asset.get("imageUrl", "") or "",  # Default to empty string if None
+                        name=asset.get("name", "") or "",  
+                        imageUrl=asset.get("imageUrl", "") or "", 
                         description=asset.get("description", "")
                     ) for asset in prop.get("Assets", [])
                 ],
                 site_name=prop.get("site_name", ""),
-                current_price=prop.get("Current_Price", 0.0)  
+                current_price=prop.get("Current_Price", 0.0) ,
+                reviews=prop.get("Reviews", []),  # Include reviews
+                address=prop.get("Address", "") 
             )
             properties.append(property_item)
         except Exception as e:
@@ -135,7 +143,9 @@ def get_property_details(property_id: str):
                 ) for asset in property_data.get("Assets", [])
             ],
             site_name=property_data["site_name"],
-            current_price=property_data["Current_Price"]
+            current_price=property_data["Current_Price"],
+            reviews=property_data.get("Reviews", []),  # Include reviews
+            address=property_data.get("Address", "") 
         )
 
         return property_details
@@ -156,7 +166,7 @@ async def search_properties(
         results = list(
             property_collection.find(
                 {"City": {"$regex": city, "$options": "i"}},  
-                {"_id": 0, "Property_Name": 1, "City": 1, "Address": 1,"Locality":1,"Allowed_Gender":1,"Property_type":1,"Pricing_Plan":1,"Current_Price":1,"Amitnies":1,"Assets":1,"site_name":1} 
+                {"_id": 0, "Property_Name": 1, "City": 1, "Address": 1,"Locality":1,"Allowed_Gender":1,"Property_type":1,"Pricing_Plan":1,"Current_Price":1,"Amitnies":1,"Assets":1,"site_name":1,"Reviews": 1,} 
             )
             .skip(skip)
             .limit(page_size)
@@ -202,7 +212,9 @@ def search_properties(
                 description=asset.get("description", "")
             ) for asset in prop.get("Assets", [])],
             site_name=prop["site_name"],
-            current_price=prop["Current_Price"]
+            current_price=prop["Current_Price"],
+            reviews=prop.get("Reviews", []),  
+            address=prop.get("Address", "") 
         )
         for prop in cursor
     ]

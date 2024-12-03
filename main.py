@@ -156,7 +156,7 @@ def get_property_details(property_id: str):
                         displayName=review.get("displayName", ""),
                         text=review.get("text", ""),
                         photo_url=review.get("photoUri", "")
-                    ) for review in prop.get("reviews", [])
+                    ) for review in property_data.get("reviews", [])
                 ],
             address=property_data.get("Address", "") 
         )

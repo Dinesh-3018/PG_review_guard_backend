@@ -1,3 +1,4 @@
+import re
 import requests
 from pymongo import MongoClient
 import base64
@@ -13,7 +14,7 @@ def PropertyData():
     db = client["Cities_db"]
     collection = db["cities_collections"]
     db1 = client["Property_db"]
-    collection1 = db1["properties_collections"]
+    collection1 = db1["properties_collections1"]
     current_date = datetime.now(timezone.utc)
     req_count = 0
     db_count = 0
@@ -53,8 +54,10 @@ def PropertyData():
             response = requests.get(hit_url, headers=headers)
             data = response.json()
             resluts = data.get("predictions")
-            place_id = resluts[0].get("placeId")
-
+            if isinstance(resluts, list) and resluts:
+                place_id = resluts[0].get("placeId")
+            else:
+                place_id = None
             loca_data = [{"placeId": place_id, "showMap": False}]
 
             json_string = json.dumps(loca_data)
@@ -86,11 +89,15 @@ def PropertyData():
             response = requests.get(hit_url_2, headers=headers_for_url_2)
             data = response.json()
             final_data = data.get("data", [])
-            print(type(final_data))
+            # print(final_data)
             for property in final_data:
                 if property is not None:
-
                     owner_id = property.get("ownerId", [])
+                    detail_url = property.get("detailUrl")
+                    match = re.search(r"[a-f0-9]{32}", detail_url)
+
+                    final_owner_id = match.group(0) if match else None
+                    print(final_owner_id)
                     request_data = {
                         "Host": "www.nobroker.in",
                         "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0",
@@ -107,9 +114,9 @@ def PropertyData():
                         "Connection": "keep-alive",
                         "Cookie": "nbSource=direct; nbMedium=direct; nbCampaign=direct; nbDevice=desktop; mbTrackID=3fd4029d2fed4851a5ebfdaf965d0f1f; __zlcmid=1NUmynU0iXVYnUt; nbcit=OGE5ZjhjODM4ZTI4NzcxNDAxOGUyOGZkZWNlNzU0NTJmZmJkfGFjZDIwMjQtMDMtMTAgMjE6MDE6NTQuMA==; nbFr=list-pg; SPRING_SECURITY_REMEMBER_ME_COOKIE=RU5lUzF0U00rSUE0TExaOEtwZUxxZz09Om5oTThkeXYwSk0zK2p2ZVhBdWx5TVE9PQ; loggedInUserStatus=existing; _ud_basic=true; _ud_check=true; _ud_login=true; _last_cp=8a9f90438ff039fd018ff09c9c270984; cloudfront-viewer-address=49.249.121.122%3A59150; cloudfront-viewer-country=IN; cloudfront-viewer-latitude=12.89960; cloudfront-viewer-longitude=80.22090; headerFalse=false; isMobile=false; deviceType=web; js_enabled=true; userInfoCalled=true; nbcr=chennai; nbpt=PG; dummy=foo; nbccc=b9d7e322bbfa4a79893bd548c2daf9fb; _f_au=eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczovL2lkZW50aXR5dG9vbGtpdC5nb29nbGVhcGlzLmNvbS9nb29nbGUuaWRlbnRpdHkuaWRlbnRpdHl0b29sa2l0LnYxLklkZW50aXR5VG9vbGtpdCIsImV4cCI6MTcyNTUyMDMxNywiaWF0IjoxNzI1NTE2NzE3LCJpc3MiOiJub2Jyb2tlci1maXJlYmFzZUBuby1icm9rZXIuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzdWIiOiJub2Jyb2tlci1maXJlYmFzZUBuby1icm9rZXIuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJ1aWQiOiI4YTlmOGM4MzhlMjg3NzE0MDE4ZTI4ZmRlY2U3NTQ1MiJ9.HDEkY6v3kjcPDmZVWt6gYcDtkS1ENO8ROzOepaWAisarpDADRA7ZupvApaBZZidUQ4gkNJb_utl9A3qcsGpDwli5GkVrLDwkRDhTwWPQFjZotb9l-HzwxE6rINt-VtMhjcpLLDtwdmAc8FRNO6Sr7nka8eFskFXdw5_X_gF4GYKk3n-expVPI5C_BGzMRRkqzNcRkNFEUV2hRPbifFt12IYLGEm5WK3821Xrow6OYKMrhIrfNKuMJz2HXsfCtySXd1d630xwBQQz11Pjhuck_qGOnL58hhJ0QEKrKb0EROHZjarh5K-qtOC9c9HaZVXKoBuWhtMN9Cz43_ZDKAzZHw; JSESSION=961074ec-6ecf-4a85-8610-e2ff287d3cdf",
                     }
-                    hit_url_3_for_owner = (
-                        f"https://www.nobroker.in/api/v3/user/contacted/{owner_id}"
-                    )
+                    hit_url_3_for_owner = f"https://www.nobroker.in/api/v3/activity/contact/{final_owner_id}?_nbfr=list-pg_nearby&deferBasicPlan=true"
+                    # hit_url_3_for_owner = f"https://www.nobroker.in/api/v3/user/contacted/{final_owner_id}"
+
                     default_mapping = {
                         "AB": {
                             "imagename": "Attached Bathroom",
@@ -191,8 +198,11 @@ def PropertyData():
                     res_owner_data = requests.get(
                         hit_url_3_for_owner, headers=request_data
                     )
+
                     owner_data = res_owner_data.json()
                     owner_contact_data = owner_data.get("data")
+                    print(owner_data)
+
                     property_data = {
                         "property_id": property.get("id"),
                         "Property_Name": property.get("propertyTitle"),
@@ -221,7 +231,7 @@ def PropertyData():
                         {"$set": property_data},
                         upsert=True,
                     )
-                    print(f"update on Db with {property.get("city")},")
+                    print(f"update on Db with {property.get('city')},")
                 break
 
 

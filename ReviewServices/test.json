@@ -1,0 +1,1145 @@
+{
+  "places": [
+    {
+      "name": "places/ChIJgaQB79UXrjsRWd2AOSvHVms",
+      "id": "ChIJgaQB79UXrjsRWd2AOSvHVms",
+      "types": ["point_of_interest", "establishment"],
+      "nationalPhoneNumber": "088845 18010",
+      "internationalPhoneNumber": "+91 88845 18010",
+      "formattedAddress": "1, 4th Cross Road, Service Rd, near Manyata Skywalk, Vyalikaval HBCS Layout, Nagavara, Bengaluru, Karnataka 560045, India",
+      "addressComponents": [
+        {
+          "longText": "Manyata Skywalk",
+          "shortText": "Manyata Skywalk",
+          "types": ["landmark"],
+          "languageCode": "en"
+        },
+        {
+          "longText": "Service Road",
+          "shortText": "Service Rd",
+          "types": ["route"],
+          "languageCode": "en"
+        },
+        {
+          "longText": "Vyalikaval HBCS Layout",
+          "shortText": "Vyalikaval HBCS Layout",
+          "types": ["sublocality_level_2", "sublocality", "political"],
+          "languageCode": "en"
+        },
+        {
+          "longText": "Nagavara",
+          "shortText": "Nagavara",
+          "types": ["sublocality_level_1", "sublocality", "political"],
+          "languageCode": "en"
+        },
+        {
+          "longText": "Bengaluru",
+          "shortText": "Bengaluru",
+          "types": ["locality", "political"],
+          "languageCode": "en"
+        },
+        {
+          "longText": "Bengaluru Urban",
+          "shortText": "Bengaluru Urban",
+          "types": ["administrative_area_level_3", "political"],
+          "languageCode": "en"
+        },
+        {
+          "longText": "Bangalore Division",
+          "shortText": "Bangalore Division",
+          "types": ["administrative_area_level_2", "political"],
+          "languageCode": "en"
+        },
+        {
+          "longText": "Karnataka",
+          "shortText": "KA",
+          "types": ["administrative_area_level_1", "political"],
+          "languageCode": "en"
+        },
+        {
+          "longText": "India",
+          "shortText": "IN",
+          "types": ["country", "political"],
+          "languageCode": "en"
+        },
+        {
+          "longText": "560045",
+          "shortText": "560045",
+          "types": ["postal_code"],
+          "languageCode": "en-US"
+        }
+      ],
+      "plusCode": {
+        "globalCode": "7J5V2JRC+7Q",
+        "compoundCode": "2JRC+7Q Bengaluru, Karnataka, India"
+      },
+      "location": {
+        "latitude": 13.0407431,
+        "longitude": 77.62195109999999
+      },
+      "viewport": {
+        "low": {
+          "latitude": 13.039438769708498,
+          "longitude": 77.620613569708482
+        },
+        "high": {
+          "latitude": 13.042136730291503,
+          "longitude": 77.6233115302915
+        }
+      },
+      "rating": 4.5,
+      "googleMapsUri": "https://maps.google.com/?cid=7734588398517673305",
+      "websiteUri": "https://zolostays.com/pg-hostel-near-nagwara-in-bangalore-zolo_sphere-zohere",
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 0,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ]
+      },
+      "utcOffsetMinutes": 330,
+      "adrFormatAddress": "1, 4th Cross Road, \u003cspan class=\"street-address\"\u003eService Rd\u003c/span\u003e, near Manyata Skywalk, \u003cspan class=\"extended-address\"\u003eVyalikaval HBCS Layout, Nagavara\u003c/span\u003e, \u003cspan class=\"locality\"\u003eBengaluru\u003c/span\u003e, \u003cspan class=\"region\"\u003eKarnataka\u003c/span\u003e \u003cspan class=\"postal-code\"\u003e560045\u003c/span\u003e, \u003cspan class=\"country-name\"\u003eIndia\u003c/span\u003e",
+      "businessStatus": "OPERATIONAL",
+      "userRatingCount": 121,
+      "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "iconBackgroundColor": "#7B9EB0",
+      "displayName": {
+        "text": "Zolo Sphere - Best PG Near Manyata Tech Park | Coliving PG",
+        "languageCode": "en"
+      },
+      "currentOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {
+            "open": {
+              "day": 3,
+              "hour": 0,
+              "minute": 0,
+              "truncated": true,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 2
+              }
+            },
+            "close": {
+              "day": 2,
+              "hour": 23,
+              "minute": 59,
+              "truncated": true,
+              "date": {
+                "year": 2025,
+                "month": 4,
+                "day": 8
+              }
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ]
+      },
+      "currentSecondaryOpeningHours": [
+        {
+          "openNow": false,
+          "periods": [
+            {
+              "open": {
+                "day": 0,
+                "hour": 7,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 6
+                }
+              },
+              "close": {
+                "day": 0,
+                "hour": 9,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 6
+                }
+              }
+            },
+            {
+              "open": {
+                "day": 1,
+                "hour": 7,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 7
+                }
+              },
+              "close": {
+                "day": 1,
+                "hour": 9,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 7
+                }
+              }
+            },
+            {
+              "open": {
+                "day": 2,
+                "hour": 7,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 8
+                }
+              },
+              "close": {
+                "day": 2,
+                "hour": 9,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 8
+                }
+              }
+            },
+            {
+              "open": {
+                "day": 3,
+                "hour": 7,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 2
+                }
+              },
+              "close": {
+                "day": 3,
+                "hour": 9,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 2
+                }
+              }
+            },
+            {
+              "open": {
+                "day": 4,
+                "hour": 7,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 3
+                }
+              },
+              "close": {
+                "day": 4,
+                "hour": 9,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 3
+                }
+              }
+            },
+            {
+              "open": {
+                "day": 5,
+                "hour": 7,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 4
+                }
+              },
+              "close": {
+                "day": 5,
+                "hour": 9,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 4
+                }
+              }
+            },
+            {
+              "open": {
+                "day": 6,
+                "hour": 7,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 5
+                }
+              },
+              "close": {
+                "day": 6,
+                "hour": 9,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 5
+                }
+              }
+            }
+          ],
+          "weekdayDescriptions": [
+            "Monday: 7:00 – 9:00 AM",
+            "Tuesday: 7:00 – 9:00 AM",
+            "Wednesday: 7:00 – 9:00 AM",
+            "Thursday: 7:00 – 9:00 AM",
+            "Friday: 7:00 – 9:00 AM",
+            "Saturday: 7:00 – 9:00 AM",
+            "Sunday: 7:00 – 9:00 AM"
+          ],
+          "secondaryHoursType": "BREAKFAST",
+          "nextOpenTime": "2025-04-03T01:30:00Z"
+        },
+        {
+          "openNow": false,
+          "periods": [
+            {
+              "open": {
+                "day": 0,
+                "hour": 19,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 6
+                }
+              },
+              "close": {
+                "day": 0,
+                "hour": 21,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 6
+                }
+              }
+            },
+            {
+              "open": {
+                "day": 1,
+                "hour": 19,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 7
+                }
+              },
+              "close": {
+                "day": 1,
+                "hour": 21,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 7
+                }
+              }
+            },
+            {
+              "open": {
+                "day": 2,
+                "hour": 19,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 8
+                }
+              },
+              "close": {
+                "day": 2,
+                "hour": 21,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 8
+                }
+              }
+            },
+            {
+              "open": {
+                "day": 3,
+                "hour": 19,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 2
+                }
+              },
+              "close": {
+                "day": 3,
+                "hour": 21,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 2
+                }
+              }
+            },
+            {
+              "open": {
+                "day": 4,
+                "hour": 19,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 3
+                }
+              },
+              "close": {
+                "day": 4,
+                "hour": 21,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 3
+                }
+              }
+            },
+            {
+              "open": {
+                "day": 5,
+                "hour": 19,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 4
+                }
+              },
+              "close": {
+                "day": 5,
+                "hour": 21,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 4
+                }
+              }
+            },
+            {
+              "open": {
+                "day": 6,
+                "hour": 19,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 5
+                }
+              },
+              "close": {
+                "day": 6,
+                "hour": 21,
+                "minute": 0,
+                "date": {
+                  "year": 2025,
+                  "month": 4,
+                  "day": 5
+                }
+              }
+            }
+          ],
+          "weekdayDescriptions": [
+            "Monday: 7:00 – 9:00 PM",
+            "Tuesday: 7:00 – 9:00 PM",
+            "Wednesday: 7:00 – 9:00 PM",
+            "Thursday: 7:00 – 9:00 PM",
+            "Friday: 7:00 – 9:00 PM",
+            "Saturday: 7:00 – 9:00 PM",
+            "Sunday: 7:00 – 9:00 PM"
+          ],
+          "secondaryHoursType": "DINNER",
+          "nextOpenTime": "2025-04-02T13:30:00Z"
+        }
+      ],
+      "regularSecondaryOpeningHours": [
+        {
+          "openNow": false,
+          "periods": [
+            {
+              "open": {
+                "day": 0,
+                "hour": 7,
+                "minute": 0
+              },
+              "close": {
+                "day": 0,
+                "hour": 9,
+                "minute": 0
+              }
+            },
+            {
+              "open": {
+                "day": 1,
+                "hour": 7,
+                "minute": 0
+              },
+              "close": {
+                "day": 1,
+                "hour": 9,
+                "minute": 0
+              }
+            },
+            {
+              "open": {
+                "day": 2,
+                "hour": 7,
+                "minute": 0
+              },
+              "close": {
+                "day": 2,
+                "hour": 9,
+                "minute": 0
+              }
+            },
+            {
+              "open": {
+                "day": 3,
+                "hour": 7,
+                "minute": 0
+              },
+              "close": {
+                "day": 3,
+                "hour": 9,
+                "minute": 0
+              }
+            },
+            {
+              "open": {
+                "day": 4,
+                "hour": 7,
+                "minute": 0
+              },
+              "close": {
+                "day": 4,
+                "hour": 9,
+                "minute": 0
+              }
+            },
+            {
+              "open": {
+                "day": 5,
+                "hour": 7,
+                "minute": 0
+              },
+              "close": {
+                "day": 5,
+                "hour": 9,
+                "minute": 0
+              }
+            },
+            {
+              "open": {
+                "day": 6,
+                "hour": 7,
+                "minute": 0
+              },
+              "close": {
+                "day": 6,
+                "hour": 9,
+                "minute": 0
+              }
+            }
+          ],
+          "weekdayDescriptions": [
+            "Monday: 7:00 – 9:00 AM",
+            "Tuesday: 7:00 – 9:00 AM",
+            "Wednesday: 7:00 – 9:00 AM",
+            "Thursday: 7:00 – 9:00 AM",
+            "Friday: 7:00 – 9:00 AM",
+            "Saturday: 7:00 – 9:00 AM",
+            "Sunday: 7:00 – 9:00 AM"
+          ],
+          "secondaryHoursType": "BREAKFAST",
+          "nextOpenTime": "2025-04-03T01:30:00Z"
+        },
+        {
+          "openNow": false,
+          "periods": [
+            {
+              "open": {
+                "day": 0,
+                "hour": 19,
+                "minute": 0
+              },
+              "close": {
+                "day": 0,
+                "hour": 21,
+                "minute": 0
+              }
+            },
+            {
+              "open": {
+                "day": 1,
+                "hour": 19,
+                "minute": 0
+              },
+              "close": {
+                "day": 1,
+                "hour": 21,
+                "minute": 0
+              }
+            },
+            {
+              "open": {
+                "day": 2,
+                "hour": 19,
+                "minute": 0
+              },
+              "close": {
+                "day": 2,
+                "hour": 21,
+                "minute": 0
+              }
+            },
+            {
+              "open": {
+                "day": 3,
+                "hour": 19,
+                "minute": 0
+              },
+              "close": {
+                "day": 3,
+                "hour": 21,
+                "minute": 0
+              }
+            },
+            {
+              "open": {
+                "day": 4,
+                "hour": 19,
+                "minute": 0
+              },
+              "close": {
+                "day": 4,
+                "hour": 21,
+                "minute": 0
+              }
+            },
+            {
+              "open": {
+                "day": 5,
+                "hour": 19,
+                "minute": 0
+              },
+              "close": {
+                "day": 5,
+                "hour": 21,
+                "minute": 0
+              }
+            },
+            {
+              "open": {
+                "day": 6,
+                "hour": 19,
+                "minute": 0
+              },
+              "close": {
+                "day": 6,
+                "hour": 21,
+                "minute": 0
+              }
+            }
+          ],
+          "weekdayDescriptions": [
+            "Monday: 7:00 – 9:00 PM",
+            "Tuesday: 7:00 – 9:00 PM",
+            "Wednesday: 7:00 – 9:00 PM",
+            "Thursday: 7:00 – 9:00 PM",
+            "Friday: 7:00 – 9:00 PM",
+            "Saturday: 7:00 – 9:00 PM",
+            "Sunday: 7:00 – 9:00 PM"
+          ],
+          "secondaryHoursType": "DINNER",
+          "nextOpenTime": "2025-04-02T13:30:00Z"
+        }
+      ],
+      "shortFormattedAddress": "1, 4th Cross Road, Service Rd, Manyata Skywalk, Vyalikaval HBCS Layout, Nagavara, Bengaluru",
+      "reviews": [
+        {
+          "name": "places/ChIJgaQB79UXrjsRWd2AOSvHVms/reviews/ChdDSUhNMG9nS0VJQ0FnTURRNGZ2eW5RRRAB",
+          "relativePublishTimeDescription": "3 weeks ago",
+          "rating": 5,
+          "text": {
+            "text": "Excellent place to stay. Very good service.",
+            "languageCode": "en"
+          },
+          "originalText": {
+            "text": "Excellent place to stay. Very good service.",
+            "languageCode": "en"
+          },
+          "authorAttribution": {
+            "displayName": "Dinesh",
+            "uri": "https://www.google.com/maps/contrib/108040973914918681176/reviews",
+            "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIeQdhBx5dSGn2-4zWluJno-L1syiE1zHW8VO5wxJwrx2bD_jRZ=s128-c0x00000000-cc-rp-mo-ba3"
+          },
+          "publishTime": "2025-03-11T15:54:21.822998Z",
+          "flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnTURRNGZ2eW5RRRAB&d=17924085&t=1",
+          "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnTURRNGZ2eW5RRRAB!2m1!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59"
+        },
+        {
+          "name": "places/ChIJgaQB79UXrjsRWd2AOSvHVms/reviews/ChZDSUhNMG9nS0VJQ0FnSUQzMWVLc0tnEAE",
+          "relativePublishTimeDescription": "4 months ago",
+          "rating": 5,
+          "text": {
+            "text": "Maintains well.\nBest PG near in Manyata tech park.\nPG manager maintains the PG in clean and neat and 24/7 in supportive .",
+            "languageCode": "en"
+          },
+          "originalText": {
+            "text": "Maintains well.\nBest PG near in Manyata tech park.\nPG manager maintains the PG in clean and neat and 24/7 in supportive .",
+            "languageCode": "en"
+          },
+          "authorAttribution": {
+            "displayName": "Adinarayana kuna",
+            "uri": "https://www.google.com/maps/contrib/109188812773919876720/reviews",
+            "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLa9jUJXFNyYXngDhvjpxrOpnd1WOJv4JsJeSAwR3lsTAjzuwIu=s128-c0x00000000-cc-rp-mo-ba2"
+          },
+          "publishTime": "2024-11-17T07:02:13.481609Z",
+          "flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUQzMWVLc0tnEAE&d=17924085&t=1",
+          "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUQzMWVLc0tnEAE!2m1!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59"
+        },
+        {
+          "name": "places/ChIJgaQB79UXrjsRWd2AOSvHVms/reviews/ChdDSUhNMG9nS0VJQ0FnSURmZ0tmczJRRRAB",
+          "relativePublishTimeDescription": "2 months ago",
+          "rating": 5,
+          "text": {
+            "text": "Best experience and very supportive staff . The rooms are very clean and there are many additional facilities also.\nMuch recommended in banglore.",
+            "languageCode": "en"
+          },
+          "originalText": {
+            "text": "Best experience and very supportive staff . The rooms are very clean and there are many additional facilities also.\nMuch recommended in banglore.",
+            "languageCode": "en"
+          },
+          "authorAttribution": {
+            "displayName": "Robby",
+            "uri": "https://www.google.com/maps/contrib/108539026987762637903/reviews",
+            "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIbN_hkgKwPj1-Fz8d1mXB7bmRjEif5gbAAEuwQff2MV1NvTw=s128-c0x00000000-cc-rp-mo"
+          },
+          "publishTime": "2025-01-03T07:53:59.460217Z",
+          "flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURmZ0tmczJRRRAB&d=17924085&t=1",
+          "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURmZ0tmczJRRRAB!2m1!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59"
+        },
+        {
+          "name": "places/ChIJgaQB79UXrjsRWd2AOSvHVms/reviews/ChZDSUhNMG9nS0VJQ0FnSUQzMWRLWVhnEAE",
+          "relativePublishTimeDescription": "4 months ago",
+          "rating": 5,
+          "text": {
+            "text": "Good to stay for near to the Manyata Tech park.\nHouse keeping is good.\nPG manager is good and supportive",
+            "languageCode": "en"
+          },
+          "originalText": {
+            "text": "Good to stay for near to the Manyata Tech park.\nHouse keeping is good.\nPG manager is good and supportive",
+            "languageCode": "en"
+          },
+          "authorAttribution": {
+            "displayName": "Tech1 Kuna",
+            "uri": "https://www.google.com/maps/contrib/102708437976316506424/reviews",
+            "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJKFzdrynGmq1AlFz2ETHR2LRwI42PGIBt7VLY-0dkmNxpylA=s128-c0x00000000-cc-rp-mo"
+          },
+          "publishTime": "2024-11-17T07:04:15.857693Z",
+          "flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUQzMWRLWVhnEAE&d=17924085&t=1",
+          "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUQzMWRLWVhnEAE!2m1!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59"
+        },
+        {
+          "name": "places/ChIJgaQB79UXrjsRWd2AOSvHVms/reviews/ChdDSUhNMG9nS0VJQ0FnSUR2dlBLcTdnRRAB",
+          "relativePublishTimeDescription": "3 months ago",
+          "rating": 5,
+          "text": {
+            "text": "Great property and great staff and they are very helpful too.. love to stay in zolo",
+            "languageCode": "en"
+          },
+          "originalText": {
+            "text": "Great property and great staff and they are very helpful too.. love to stay in zolo",
+            "languageCode": "en"
+          },
+          "authorAttribution": {
+            "displayName": "Sandeep Rishi",
+            "uri": "https://www.google.com/maps/contrib/103501343470674537113/reviews",
+            "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKKSR8cNfyRwlndJVEOTArike6DTnOwDsj5YzhWnu1VwY8OPGc=s128-c0x00000000-cc-rp-mo"
+          },
+          "publishTime": "2024-12-18T14:42:51.340315Z",
+          "flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUR2dlBLcTdnRRAB&d=17924085&t=1",
+          "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUR2dlBLcTdnRRAB!2m1!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59"
+        }
+      ],
+      "photos": [
+        {
+          "name": "places/ChIJgaQB79UXrjsRWd2AOSvHVms/photos/AUy1YQ3uVgY03vBNbjcAISkJOqwcfq4H6ZEyu-PPiuQ17mNaenBj8I0wJqsxh_SYt6_dZ7iToAZHZqQZKyfO9zYMYZyfqIviqmOuhyzqVijhEyz5UsnJ_rienvDKn83pZ9KlCqgHazMJo6S4TZ0mULA6gEEepSwSa5U2DZ45pOAhMPMOQ3CEpW3xre252fufGhnQEP21QNjn7wYPmg3o8fIMStH8gO5oEaa3J94LGR0hXx8CdeRtsiyGwH2OGeJwW5sL4MP9fODMqDkJr-CJKwTPuDY1amO5xqobkOGUy7E6qORujg",
+          "widthPx": 1600,
+          "heightPx": 1200,
+          "authorAttributions": [
+            {
+              "displayName": "Zolo Sphere - Best PG Near Manyata Tech Park | Coliving PG",
+              "uri": "https://maps.google.com/maps/contrib/115118582264507646233",
+              "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWwDbNSxd8E_pwplBrFsx6e2GS2u8V8hi9vImqaXyPYocGdxNYn=s100-p-k-no-mo"
+            }
+          ],
+          "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipOoNZ2wcVIe8F4VdIiXso-FUhzNwbnKowJGi8Wg&hl=en-US",
+          "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipOoNZ2wcVIe8F4VdIiXso-FUhzNwbnKowJGi8Wg!2e10!4m2!3m1!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59"
+        },
+        {
+          "name": "places/ChIJgaQB79UXrjsRWd2AOSvHVms/photos/AUy1YQ1XcLB6O8OnnxmiqQImExCyHOmQnAInZNgoqv78cSanirdqsGFnlIzhvuB1TO951JvMk-FxhH4LEkf9skIglZBvOCxWMhpNHFnMtAYBbQmIee1Fn5HKPweCOs7EJEHp2cPwEOsA6vWgE6CZJ6hR61qeJ4n_yvmAfWT2mwU6UM6ZZFNF2swOfRjGWdFGidtgNExtMHWkB5fb8Ye7U0XPyRpDVNgw9Qg0DDV3srVVkgXejri-y4EGTWXEWcx_Quz6dc68Enu07K-kNHysPgP558vp8UoMfzfD17nXcpbwgMpUWw",
+          "widthPx": 1600,
+          "heightPx": 1200,
+          "authorAttributions": [
+            {
+              "displayName": "Zolo Sphere - Best PG Near Manyata Tech Park | Coliving PG",
+              "uri": "https://maps.google.com/maps/contrib/115118582264507646233",
+              "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWwDbNSxd8E_pwplBrFsx6e2GS2u8V8hi9vImqaXyPYocGdxNYn=s100-p-k-no-mo"
+            }
+          ],
+          "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipMvw7_aD2ICeN5tAGFZ-D0tOr3m8Ezfu60XlElB&hl=en-US",
+          "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipMvw7_aD2ICeN5tAGFZ-D0tOr3m8Ezfu60XlElB!2e10!4m2!3m1!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59"
+        },
+        {
+          "name": "places/ChIJgaQB79UXrjsRWd2AOSvHVms/photos/AUy1YQ14QQpBvphps-g2uM-QSmSXT9te9RxuzWftQW0SD5KTaMXO8FWzkYV9heCgZy_d3yjOrRcVPSn3wwB-6nrsQCIsB8eUyUq6SkCy9BHNe174ZnnzWgTlgJRO9lIp6PBHJETVetYyHD1W594hfWTo9-uzs3ltg7elUjWkHRCChMHNG94j9U05Uq96sWU2ILK0-OG6EDh27P6Di-sQQ9wRyDAInK55D8Vtiptmmmq_AijcKOIPL-hLOCADHxnirwyNFPSnBEXwJ3UR27ryIY5Rhf2e0UZITmHeWrx6IApGvbie1Q",
+          "widthPx": 1600,
+          "heightPx": 1200,
+          "authorAttributions": [
+            {
+              "displayName": "Zolo Sphere - Best PG Near Manyata Tech Park | Coliving PG",
+              "uri": "https://maps.google.com/maps/contrib/115118582264507646233",
+              "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWwDbNSxd8E_pwplBrFsx6e2GS2u8V8hi9vImqaXyPYocGdxNYn=s100-p-k-no-mo"
+            }
+          ],
+          "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipNYcEeQe51G0TksXHq2O6awS-N1_BluPO9_T0-Y&hl=en-US",
+          "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipNYcEeQe51G0TksXHq2O6awS-N1_BluPO9_T0-Y!2e10!4m2!3m1!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59"
+        },
+        {
+          "name": "places/ChIJgaQB79UXrjsRWd2AOSvHVms/photos/AUy1YQ1Vmt9Ot8SMavrKaFjeQ9odkYNzAZ950hjpt7qdgpdWokyyIuvFWLfB2gwjOtXK11nRcCVkiEatsxNtJFNtgZ2ml5vsb_atr12mN3bJjXSkPQOFsapYf9Shs_dUDdVTjIE9jLOrpgUiOtueIFESZ-VljfMFt5Gx1RWKVb2lYSAY529wp5e9DrX3OJuZpLNdkga8cKrFOIfqNXudF9vYz2zQp9hkDnRPEMloF3lonhVDLAqzADPIyTxLZ52TqM1YiJuU5RfuqCUfSG0LiZ4JG9z8uHifzEIQSDULetwNufSJvQ",
+          "widthPx": 1600,
+          "heightPx": 1200,
+          "authorAttributions": [
+            {
+              "displayName": "Zolo Sphere - Best PG Near Manyata Tech Park | Coliving PG",
+              "uri": "https://maps.google.com/maps/contrib/115118582264507646233",
+              "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWwDbNSxd8E_pwplBrFsx6e2GS2u8V8hi9vImqaXyPYocGdxNYn=s100-p-k-no-mo"
+            }
+          ],
+          "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipOzEG3qslB3mPUYug5OPFXLg3rQcpJmeGmqduas&hl=en-US",
+          "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipOzEG3qslB3mPUYug5OPFXLg3rQcpJmeGmqduas!2e10!4m2!3m1!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59"
+        },
+        {
+          "name": "places/ChIJgaQB79UXrjsRWd2AOSvHVms/photos/AUy1YQ1m1E8cQkcY7D_xC6wmr8QT-sC8xDfgFkaoBizeANNreHpMauNuOjm9mQMiij8v1VQau9tXP66BdppWdYoitKoH5mC6MDkTJvkJDNd2GVocm49Z1-uNe1cxvkJYCeHjHrHStfhJvHSYghPhbl48clHM7-5k4NKaGReMnNR29UK-DDf7kRXQQkdV6QAGXyQ7i78Bh1In-8WBrTIOi4McRSE6tcIrbB4X4RLu0-1eiXXlB7lQ_wgZv5L7wofOH8-lwI-pNHYmFh2-nIqf5CtLn3Dc9m4Ef9WDGfYTgBfCKLZ2Sg",
+          "widthPx": 1600,
+          "heightPx": 1200,
+          "authorAttributions": [
+            {
+              "displayName": "Zolo Sphere - Best PG Near Manyata Tech Park | Coliving PG",
+              "uri": "https://maps.google.com/maps/contrib/115118582264507646233",
+              "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWwDbNSxd8E_pwplBrFsx6e2GS2u8V8hi9vImqaXyPYocGdxNYn=s100-p-k-no-mo"
+            }
+          ],
+          "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipMo0PkFPXuQ3PPuIAbrKrr6n6JmZm8ysbhqXfBp&hl=en-US",
+          "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipMo0PkFPXuQ3PPuIAbrKrr6n6JmZm8ysbhqXfBp!2e10!4m2!3m1!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59"
+        },
+        {
+          "name": "places/ChIJgaQB79UXrjsRWd2AOSvHVms/photos/AUy1YQ1DWD72rSBqnwbHTr-tSv5mTF-V994mtTSCJitTJBVBXzhHr9BZGu0dtP_S8ovP_apmmpyzKd_NqwsAj4XdfPIKRjdy5PmAiI8TyOXT4zpYV-_uyIVHNtanmCpwq0ubYSUKE5Y7LuFclxezTUip0IwJwbzTee7a9XJaGb9dKbHYwFlvsA2ZBFENSSQBM1mmwstrGjhOUKpEAcrUEtFGEV6mcAmRXTZMVXUqdZnZ6fXq8I6fg0i4YkHZMqq4-6lgrbGHIlE7q-abAA21cZwjdENFdZ40WxwzJ6UcCyc2VTIKWQ",
+          "widthPx": 1600,
+          "heightPx": 1200,
+          "authorAttributions": [
+            {
+              "displayName": "Zolo Sphere - Best PG Near Manyata Tech Park | Coliving PG",
+              "uri": "https://maps.google.com/maps/contrib/115118582264507646233",
+              "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWwDbNSxd8E_pwplBrFsx6e2GS2u8V8hi9vImqaXyPYocGdxNYn=s100-p-k-no-mo"
+            }
+          ],
+          "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipNLVDdEhvkPp1MPi85hGCEPFFXWczNzk3FAN4dc&hl=en-US",
+          "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipNLVDdEhvkPp1MPi85hGCEPFFXWczNzk3FAN4dc!2e10!4m2!3m1!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59"
+        },
+        {
+          "name": "places/ChIJgaQB79UXrjsRWd2AOSvHVms/photos/AUy1YQ0e-jMXiXwlLnLmvQN3s_ez3Bj7yJoyPruLHxdzqAqT13Qv5uStBANIsNbGLK2lF726_mGEld0okYTrhdGy24fxT4ybDB5hOYWoqRFH98AUQeCBgxr4X4pXfCpFEGNpOoyAB1MjWgQ3JfjAJnmD5PA9B-3zXkYIUMfEqv0Z1TZIYvjc-k5xTDg9hb_NcB7VNMrUE2ZofM1BnbRFXrfRKGVBlu1NLiHPv5ciYKbRHr_A5lRMcwHwr8lo9ZII9Hc1TJNIGkv83AQkJYzOoLCEKaOiKOdNAAGELh00zfnSdpJqTQ",
+          "widthPx": 1600,
+          "heightPx": 1200,
+          "authorAttributions": [
+            {
+              "displayName": "Zolo Sphere - Best PG Near Manyata Tech Park | Coliving PG",
+              "uri": "https://maps.google.com/maps/contrib/115118582264507646233",
+              "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWwDbNSxd8E_pwplBrFsx6e2GS2u8V8hi9vImqaXyPYocGdxNYn=s100-p-k-no-mo"
+            }
+          ],
+          "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipMHFOc3SbebH4hSeVT-syjicZchTaO3_AQjB1DO&hl=en-US",
+          "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipMHFOc3SbebH4hSeVT-syjicZchTaO3_AQjB1DO!2e10!4m2!3m1!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59"
+        },
+        {
+          "name": "places/ChIJgaQB79UXrjsRWd2AOSvHVms/photos/AUy1YQ2ruJFS73Xh_S1C9nnYYYFb1Gk9K2Q1-WLwYWgC9y9SFXnQz5qroMM9eWCpysibrtGQ54UNJ_Ows2N3B4-LHfe9ZdXofRgy4QCI3hQ1_7xS8Z_eJ-Po_2AmpcrJAkMaaJIlfHi4bXEKqdpUbdEJ8eanDV2vNkC1aMv8JcyXntg1GYmH7ZedxfVGpeSIhzqSzOY-DUDqWRbPtF9bwlU5MO2g17AmBNIpqxdb-WEKf0uJP5Le5rh-yo2M079-SZpw9OtpEgj0krPLL5qiZIiMXkVW6gbjfPZCBWyDWeNigwV0NA",
+          "widthPx": 1600,
+          "heightPx": 1200,
+          "authorAttributions": [
+            {
+              "displayName": "Zolo Sphere - Best PG Near Manyata Tech Park | Coliving PG",
+              "uri": "https://maps.google.com/maps/contrib/115118582264507646233",
+              "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWwDbNSxd8E_pwplBrFsx6e2GS2u8V8hi9vImqaXyPYocGdxNYn=s100-p-k-no-mo"
+            }
+          ],
+          "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipPvoV3xgQffYyS9k14mgm8tqqkMsrTe3acVg9UN&hl=en-US",
+          "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipPvoV3xgQffYyS9k14mgm8tqqkMsrTe3acVg9UN!2e10!4m2!3m1!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59"
+        },
+        {
+          "name": "places/ChIJgaQB79UXrjsRWd2AOSvHVms/photos/AUy1YQ252obTlfCTvmFblqLqT-wt2FhYS_iuWezDILUKkqPBfVig2AkSVy6ObHU6Bqb1s9fayP97-dlEITTtRAeM2ghB69H6YmkW4j3RqJ4-J_pDZK-aJ1ZcFQ0lEj9b9zia06ilnyLYq9OuiFxbHaZl0Zc6szc4JgOGYcDhtsmT__iuRn-A_EOR6YXZu-Zhs3K_RCyC1_hrdYOhpoWmhXXY12sMG-dwKtmG0l6X6XlGoOGGdi7AbOrko410WCltnmBEJJi8IbRlLITrzPNMpY19Y23jkSJN4A65m3bXUY7k8Vtcug",
+          "widthPx": 1600,
+          "heightPx": 1200,
+          "authorAttributions": [
+            {
+              "displayName": "Zolo Sphere - Best PG Near Manyata Tech Park | Coliving PG",
+              "uri": "https://maps.google.com/maps/contrib/115118582264507646233",
+              "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWwDbNSxd8E_pwplBrFsx6e2GS2u8V8hi9vImqaXyPYocGdxNYn=s100-p-k-no-mo"
+            }
+          ],
+          "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipNPV9mWODLYhLuARtBabGlmxvK5FYbOwXMVI2hJ&hl=en-US",
+          "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipNPV9mWODLYhLuARtBabGlmxvK5FYbOwXMVI2hJ!2e10!4m2!3m1!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59"
+        },
+        {
+          "name": "places/ChIJgaQB79UXrjsRWd2AOSvHVms/photos/AUy1YQ0zdluerKrQsByVKStvzCnV7zg5ddtDbxnEfVffyE03BybYTQIljRne6ltT7TSk5UzlWiJRMwaC4lV0Sk8TYIxwP70pNGQ8nE4TsBQy9gSI7VKSlQJZ6PXalMntyBzKsEMU4FkDW7EEimGv20PhO__AAIO__5P8fOSG6Q7IuPg6FF-p4QjaNpOvGPL6R9X1BnwtbY868oZPsAmPFLfF05G0EXTD_LqLjyKV1Bx0YSg71ZmXmrgvc2LLiPyumpsoc-wQjTrv2q_qzlSuCRR3p9kP7UFUKbhrgNvdcOAHRJbuew",
+          "widthPx": 1600,
+          "heightPx": 1200,
+          "authorAttributions": [
+            {
+              "displayName": "Zolo Sphere - Best PG Near Manyata Tech Park | Coliving PG",
+              "uri": "https://maps.google.com/maps/contrib/115118582264507646233",
+              "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWwDbNSxd8E_pwplBrFsx6e2GS2u8V8hi9vImqaXyPYocGdxNYn=s100-p-k-no-mo"
+            }
+          ],
+          "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipMZrscPUd6_Z-_CFYUfNvBCUbRCltBfe2ZxSsp5&hl=en-US",
+          "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipMZrscPUd6_Z-_CFYUfNvBCUbRCltBfe2ZxSsp5!2e10!4m2!3m1!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59"
+        }
+      ],
+      "addressDescriptor": {
+        "landmarks": [
+          {
+            "name": "places/ChIJsyGMtm0XrjsRaicCHDZlDv4",
+            "placeId": "ChIJsyGMtm0XrjsRaicCHDZlDv4",
+            "displayName": {
+              "text": "Masjid-E-Al Aziz",
+              "languageCode": "en"
+            },
+            "types": [
+              "establishment",
+              "mosque",
+              "place_of_worship",
+              "point_of_interest"
+            ],
+            "straightLineDistanceMeters": 47.751938,
+            "travelDistanceMeters": 196.66823
+          },
+          {
+            "name": "places/ChIJWQ_tNGwXrjsRbIhzbntbyU0",
+            "placeId": "ChIJWQ_tNGwXrjsRbIhzbntbyU0",
+            "displayName": {
+              "text": "Shri Shakthi Balaji Pg For Ladies",
+              "languageCode": "en"
+            },
+            "types": ["establishment", "point_of_interest"],
+            "spatialRelationship": "ACROSS_THE_ROAD",
+            "straightLineDistanceMeters": 31.26316,
+            "travelDistanceMeters": 26.926521
+          },
+          {
+            "name": "places/ChIJ3WVcEjUXrjsRx9yWcF0rqOI",
+            "placeId": "ChIJ3WVcEjUXrjsRx9yWcF0rqOI",
+            "displayName": {
+              "text": "Prithvi Theatre 4K 3D",
+              "languageCode": "en"
+            },
+            "types": ["establishment", "movie_theater", "point_of_interest"],
+            "straightLineDistanceMeters": 113.11886,
+            "travelDistanceMeters": 663.77606
+          },
+          {
+            "name": "places/ChIJubBTNTsXrjsRGvg_BcCFo8Q",
+            "placeId": "ChIJubBTNTsXrjsRGvg_BcCFo8Q",
+            "displayName": {
+              "text": "Zolo Parea - Gents & Ladies PG Near Manyata Tech Park",
+              "languageCode": "en"
+            },
+            "types": ["establishment", "point_of_interest"],
+            "spatialRelationship": "DOWN_THE_ROAD",
+            "straightLineDistanceMeters": 26.92097,
+            "travelDistanceMeters": 26.926521
+          },
+          {
+            "name": "places/ChIJNfDuWmwXrjsRXImam9nLfGY",
+            "placeId": "ChIJNfDuWmwXrjsRXImam9nLfGY",
+            "displayName": {
+              "text": "JMJ HOSPITAL",
+              "languageCode": "en"
+            },
+            "types": [
+              "establishment",
+              "health",
+              "hospital",
+              "point_of_interest"
+            ],
+            "straightLineDistanceMeters": 197.67493,
+            "travelDistanceMeters": 381.47186
+          }
+        ],
+        "areas": [
+          {
+            "name": "places/ChIJhbQxAnMXrjsR1WhGaQP_voY",
+            "placeId": "ChIJhbQxAnMXrjsR1WhGaQP_voY",
+            "displayName": {
+              "text": "Vyalikaval HBCS Layout",
+              "languageCode": "en"
+            },
+            "containment": "OUTSKIRTS"
+          },
+          {
+            "name": "places/ChIJ1Vf_LhMXrjsRdO3wY_-zqCQ",
+            "placeId": "ChIJ1Vf_LhMXrjsRdO3wY_-zqCQ",
+            "displayName": {
+              "text": "Nagawara",
+              "languageCode": "en"
+            },
+            "containment": "OUTSKIRTS"
+          },
+          {
+            "name": "places/ChIJmR-fxYIXrjsRFhJPTFeJbVM",
+            "placeId": "ChIJmR-fxYIXrjsRFhJPTFeJbVM",
+            "displayName": {
+              "text": "Nagavara",
+              "languageCode": "en"
+            },
+            "containment": "WITHIN"
+          }
+        ]
+      },
+      "googleMapsLinks": {
+        "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59!3e0",
+        "placeUri": "https://maps.google.com/?cid=7734588398517673305",
+        "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59!12e1",
+        "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59!9m1!1b1",
+        "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59!10e5"
+      },
+      "timeZone": {
+        "id": "Asia/Calcutta"
+      }
+    }
+  ],
+  "contextualContents": [
+    {
+      "photos": [
+        {
+          "name": "places/ChIJgaQB79UXrjsRWd2AOSvHVms/photos/AUy1YQ3sVcdUmwYPdtq5PpnzL8czN-WwnZSOLuyC9379UWwg9AQ446_tppfgfSvHEUT4RiZkLckBknpb7Jnp13qSSvpO2RGv7MaBlCNCn9vc5rFHE0qHa_03UMp0z1rB5ITZ7kaf35XTcaTyquvWJIuxS2uic-_JfONgw7g4Ch9AhLAvLg_nrLp844yUk9DWbT63-liD0xPyKWXMPGXAC_jPHYGT0JfsYQbIw4S3_OutPgyIdxQENrClKTZ-FvbSDdaI1jUc1ohnGHMqLkQuEbKsbGFM9PqOHMPlIw",
+          "widthPx": 1600,
+          "heightPx": 1200,
+          "authorAttributions": [
+            {
+              "displayName": "From a Google User",
+              "uri": "https://maps.google.com/maps/contrib/115118582264507646233",
+              "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWwDbNSxd8E_pwplBrFsx6e2GS2u8V8hi9vImqaXyPYocGdxNYn=s100-p-k-no-mo"
+            }
+          ],
+          "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places&image_key=!1e10!2sAF1QipOoNZ2wcVIe8F4VdIiXso-FUhzNwbnKowJGi8Wg&hl=en-US",
+          "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipOoNZ2wcVIe8F4VdIiXso-FUhzNwbnKowJGi8Wg!2e10!4m2!3m1!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59"
+        },
+        {
+          "name": "places/ChIJgaQB79UXrjsRWd2AOSvHVms/photos/AUy1YQ3YsbHGiU9oIJ4rrq-Gycgavg3rLhrnbwTXU_AtxoK5TLWXKAUEOuuXxTwb6GGfnAMvVDgyvp-SbtEMZkW9eEJIRuVez-mz_6MnrqPeBlb2tUJiiM0HCCO75OKkUXEBBukWQB9KLHeIp7VOvb4Ang7LxhfeGoRWth4xgGZGjW_NUCpZW734bPGfrvyR3XB7QRcolTj8pOQaJXnrJhDbR0ChSIWErSxMqgktrA60qEvUvJn1PmGgA73q7YnrptVSmm_A8t5YIX3Y14akiqngXT_Z1DQP4oPlyg",
+          "widthPx": 1600,
+          "heightPx": 1200,
+          "authorAttributions": [
+            {
+              "displayName": "From a Google User",
+              "uri": "https://maps.google.com/maps/contrib/115118582264507646233",
+              "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWwDbNSxd8E_pwplBrFsx6e2GS2u8V8hi9vImqaXyPYocGdxNYn=s100-p-k-no-mo"
+            }
+          ],
+          "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places&image_key=!1e10!2sAF1QipMvw7_aD2ICeN5tAGFZ-D0tOr3m8Ezfu60XlElB&hl=en-US",
+          "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipMvw7_aD2ICeN5tAGFZ-D0tOr3m8Ezfu60XlElB!2e10!4m2!3m1!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59"
+        },
+        {
+          "name": "places/ChIJgaQB79UXrjsRWd2AOSvHVms/photos/AUy1YQ0T1p-uk8Z2eg2qf0bNwDVogTc_yfXgU5lHjr7a5k3o3X2xUDFuIP4yWipin7ipX983maF4v6wbp1pjK45M9yaGVGXbg7moAlhBn3qwhFH7xc8C6qS5m1YXaUVyxL9qSlEsvBEwqrZcfAiV2YZsncsF41uco9b2XfxGqHonCZz14WeJLiNObPunGrQZjuE8ba30XqL1zx6NSC7aPqGN1_LaHOdEW1NDEEjRbr4AvpcpW9XJUjD0lQySSyJtY2qFP5M84tZr-EYF1qvmQZqDto4UT7BJuClZKA",
+          "widthPx": 1600,
+          "heightPx": 1200,
+          "authorAttributions": [
+            {
+              "displayName": "From a Google User",
+              "uri": "https://maps.google.com/maps/contrib/115118582264507646233",
+              "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWwDbNSxd8E_pwplBrFsx6e2GS2u8V8hi9vImqaXyPYocGdxNYn=s100-p-k-no-mo"
+            }
+          ],
+          "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places&image_key=!1e10!2sAF1QipNYcEeQe51G0TksXHq2O6awS-N1_BluPO9_T0-Y&hl=en-US",
+          "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipNYcEeQe51G0TksXHq2O6awS-N1_BluPO9_T0-Y!2e10!4m2!3m1!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59"
+        },
+        {
+          "name": "places/ChIJgaQB79UXrjsRWd2AOSvHVms/photos/AUy1YQ1dO7_isij3Jx1U5BGKz1EOCaozsrsUq4n3toOdyg29gv1meRC9MojYoiOGInVaybgaM1jpCH6VJmP5Zk-1zWLwctoZycdwT95o8y_hgNN929NLa9KMZyDtAMrO0hDkZarYJj9VcNlndy7XI3Fjy4hKxNX0FmuWmPX6euXfWK5tJVXlNLRetchd-HTkE27VeqDHV8aSVUFqB6iOii0tr0bk2LrHQr8ZaL4ZWHhv9xsnSAyp3175pmqixcq8ltg5YGUG01PNpWATEVh4a0lIirv2dH5pkN49FQ",
+          "widthPx": 1600,
+          "heightPx": 1200,
+          "authorAttributions": [
+            {
+              "displayName": "From a Google User",
+              "uri": "https://maps.google.com/maps/contrib/115118582264507646233",
+              "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWwDbNSxd8E_pwplBrFsx6e2GS2u8V8hi9vImqaXyPYocGdxNYn=s100-p-k-no-mo"
+            }
+          ],
+          "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places&image_key=!1e10!2sAF1QipOzEG3qslB3mPUYug5OPFXLg3rQcpJmeGmqduas&hl=en-US",
+          "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipOzEG3qslB3mPUYug5OPFXLg3rQcpJmeGmqduas!2e10!4m2!3m1!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59"
+        },
+        {
+          "name": "places/ChIJgaQB79UXrjsRWd2AOSvHVms/photos/AUy1YQ2D9uvSF8TTgKbNbaGdrZKjU2ekebEJh4AzxRRLilTkwOQiioLPEqvbaaygVQPfr5fo6QuAAKqR6jktvuHDagglcN1wuIPgV5B9ZyL-aykTeja7QsvQrcItxYT75sC26PXgyRFTDjsiKK6LJKLi1mtOxCiseiYvkq3sCb0lcymg3VbYKM8z4KrgTls6-QWArtcs48UpPCQsOjRmfspaXOzQELFUnmcAxaRpWm8a0-8Pe2F4CwD-iZZxN9-B8ADMHPO4mMeTg6Z9R07yGfDTfkLqkI-0QIHp9w",
+          "widthPx": 1600,
+          "heightPx": 1200,
+          "authorAttributions": [
+            {
+              "displayName": "From a Google User",
+              "uri": "https://maps.google.com/maps/contrib/115118582264507646233",
+              "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWwDbNSxd8E_pwplBrFsx6e2GS2u8V8hi9vImqaXyPYocGdxNYn=s100-p-k-no-mo"
+            }
+          ],
+          "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places&image_key=!1e10!2sAF1QipMo0PkFPXuQ3PPuIAbrKrr6n6JmZm8ysbhqXfBp&hl=en-US",
+          "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipMo0PkFPXuQ3PPuIAbrKrr6n6JmZm8ysbhqXfBp!2e10!4m2!3m1!1s0x3bae17d5ef01a481:0x6b56c72b3980dd59"
+        }
+      ]
+    }
+  ],
+  "searchUri": "https://www.google.com/maps/search/Zolo+Sphere+Nagavara+Bangalore"
+}

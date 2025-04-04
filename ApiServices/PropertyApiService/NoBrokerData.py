@@ -4,13 +4,14 @@ from pymongo import MongoClient
 import base64
 import json
 from datetime import datetime, timezone
+import os
 
 from config.header_cookie_manager import (
     initialize_headers_cookies,
     get_headers_with_cookies,
 )
 
-client = MongoClient("mongodb+srv://DineshG:1234@cluster0.flovz.mongodb.net/")
+client = MongoClient(os.getenv("MONGO_URL"))
 
 
 def property_data():

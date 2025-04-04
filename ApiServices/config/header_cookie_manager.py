@@ -4,8 +4,9 @@ from pymongo import MongoClient
 import base64
 import json
 from datetime import datetime, timezone
+import os
 
-client = MongoClient("mongodb+srv://DineshG:1234@cluster0.flovz.mongodb.net/")
+client = MongoClient(os.getenv("MONGO_URL"))
 config_db = client["Config_db"]
 headers_cookies_collection = config_db["headers_cookies"]
 

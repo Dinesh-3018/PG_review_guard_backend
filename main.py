@@ -42,6 +42,9 @@ class Review(BaseModel):
     displayName: str
     text: str
     photo_url: str
+    rating: int
+    relativePublishTime: str
+    ReviewUri: str
 
 
 class Property(BaseModel):
@@ -120,6 +123,9 @@ def get_properties(page: int = Query(1, ge=1), page_size: int = Query(10, ge=1))
                         displayName=review.get("displayName", ""),
                         text=review.get("text", ""),
                         photo_url=review.get("photoUri", ""),
+                        rating=review.get("starRating", 0),
+                        relativePublishTime=review.get("relativePublishTime", ""),
+                        ReviewUri=review.get("reviewUri", ""),
                     )
                     for review in prop.get("reviews", [])
                 ],
@@ -172,6 +178,9 @@ def get_property_details(property_id: str):
                     displayName=review.get("displayName", ""),
                     text=review.get("text", ""),
                     photo_url=review.get("photoUri", ""),
+                    rating=review.get("starRating", 0),
+                    relativePublishTime=review.get("relativePublishTime", ""),
+                    ReviewUri=review.get("reviewUri", ""),
                 )
                 for review in property_data.get("reviews", [])
             ],
@@ -235,6 +244,9 @@ async def search_properties(
                             displayName=review.get("displayName", ""),
                             text=review.get("text", ""),
                             photo_url=review.get("photoUri", ""),
+                            rating=review.get("starRating", 0),
+                            relativePublishTime=review.get("relativePublishTime", ""),
+                            ReviewUri=review.get("reviewUri", ""),
                         )
                         for review in prop.get("reviews", [])
                     ],
@@ -300,6 +312,9 @@ def search_properties(
                     displayName=review.get("displayName", ""),
                     text=review.get("text", ""),
                     photo_url=review.get("photoUri", ""),
+                    rating=review.get("starRating", 0),
+                    relativePublishTime=review.get("relativePublishTime", ""),
+                    ReviewUri=review.get("reviewUri", ""),
                 )
                 for review in prop.get("reviews", [])
             ],
